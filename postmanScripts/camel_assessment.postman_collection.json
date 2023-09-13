@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "20a54aaa-7d7a-4a67-aeda-1e6d07453037",
+		"name": "camel_assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5325459"
+	},
+	"item": [
+		{
+			"name": "publishEvents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/event/publish?eventType=Testing&eventBody=Im a message from postman",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"event",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "eventType",
+							"value": "Testing"
+						},
+						{
+							"key": "eventBody",
+							"value": "Im a message from postman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEvents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/event",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEventsAfter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/events?date=2023-09-13T08:00:33",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-09-13T08:00:33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEventsByEventType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/events/type?eventType=FunFactEvent",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events",
+						"type"
+					],
+					"query": [
+						{
+							"key": "eventType",
+							"value": "FunFactEvent"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
