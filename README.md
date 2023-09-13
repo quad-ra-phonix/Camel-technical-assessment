@@ -13,8 +13,8 @@ Postgres – you can install this natively on your machine, or use a container o
 ## Usage
 
 ```
-using maven build to compile to jar, then run jar.
-You can import gralde project to IDE.
+using maven build to compile to jar, then run jar or
+You can import maven project to IDE.
 
 to prepopulate rabbitMQ queue with messages run ./mvnw verify
 
